@@ -1,0 +1,142 @@
+.loginPage {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    padding-top: 64px;
+    background: rgb(62, 154, 123);
+    background: radial-gradient(
+        circle at left top,
+        rgba(62, 154, 123, 1) 0%,
+        rgba(0, 93, 165, 1) 100%
+    );
+    height: 100vh;
+}
+.loginPage .formWrapper {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 48px 24px 35px;
+    background-color: white;
+    width: 470px;
+    height: fit-content;
+}
+.loginPage .logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.goeasyLogoWrapper {
+    max-height: 48px;
+    /* margin-top: -10px; */
+}
+.connect {
+    margin-top: -15px;
+    color: #828283;
+}
+#api,
+.attrEntry {
+    /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+    text-align: center;
+}
+.heading,
+.intro,
+.entry-item label,
+.divider,
+#email_label,
+#newPassword_label,
+#reenterPassword_label,
+#emailVerificationCode_label,
+.helpLink {
+    display: none;
+}
+.entry-item {
+    display: flex;
+    flex-direction: column-reverse;
+}
+#email,
+#password,
+#newPassword,
+#reenterPassword,
+#emailVerificationCode {
+    border: none;
+    border-bottom: 1px solid #b0b0b0;
+    width: 100%;
+    margin-bottom: 24px;
+    padding-bottom: 17px;
+}
+.password-label {
+    text-align: center;
+}
+#forgotPassword {
+    text-decoration: none !important;
+}
+/* .helpLink {
+  display: block;
+  text-decoration: none !important;
+} */
+
+#next,
+.sendButton,
+#emailVerificationControl_but_send_code,
+#emailVerificationControl_but_change_claims {
+    margin-top: 0;
+    width: 100%;
+    height: 60px;
+    color: white;
+    background: #005da5;
+    border: none;
+    font-size: 19px;
+    border-radius: 10px;
+    border: none;
+}
+#cancel,
+#emailVerificationControl_but_send_new_code {
+    height: 100%;
+    padding: 0 15px;
+    color: #005da5;
+    border: 1px solid #005da5;
+    background-color: white;
+    border-radius: 10px;
+}
+#continue,
+#emailVerificationControl_but_verify_code {
+    height: 100%;
+    padding: 0 15px;
+    background-color: #005da5;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-right: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.buttons {
+    text-align: center;
+    margin: 12px 0;
+}
+.verificationInfoText {
+    display: block;
+    margin-bottom: 16px;
+}
+.error {
+    color: red;
+}
+.create {
+    margin-top: 12px;
+}
+.newPassword_li,
+.reenterPassword_li,
+.continue {
+    display: none;
+}
+@media (max-width: 500px) {
+    .loginPage .formWrapper {
+        width: 100%;
+    }
+}
